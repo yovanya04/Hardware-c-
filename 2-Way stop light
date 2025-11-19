@@ -1,0 +1,40 @@
+// North-South 
+int NS_green = 2; 
+int NS_yellow = 3; 
+int NS_red = 4; 
+// East-West 
+int EW_green = 5; 
+int EW_yellow = 6; 
+int EW_red = 7; 
+void setup() { 
+pinMode(NS_green, OUTPUT); 
+pinMode(NS_yellow, OUTPUT); 
+pinMode(NS_red, OUTPUT); 
+pinMode(EW_green, OUTPUT); 
+pinMode(EW_yellow, OUTPUT); 
+pinMode(EW_red, OUTPUT); 
+} 
+void loop() { 
+digitalWrite(NS_green, HIGH); 
+digitalWrite(NS_yellow, LOW); 
+digitalWrite(NS_red, LOW); 
+digitalWrite(EW_green, LOW); 
+digitalWrite(EW_yellow, LOW); 
+digitalWrite(EW_red, HIGH); 
+delay(5000);  
+digitalWrite(NS_green, LOW); 
+digitalWrite(NS_yellow, HIGH); 
+digitalWrite(NS_red, LOW); 
+delay(2000); 
+digitalWrite(NS_green, LOW); 
+digitalWrite(NS_yellow, LOW); 
+digitalWrite(NS_red, HIGH); 
+digitalWrite(EW_green, HIGH); 
+digitalWrite(EW_yellow, LOW); 
+digitalWrite(EW_red, LOW); 
+4 
+delay(5000);  
+digitalWrite(EW_green, LOW); 
+digitalWrite(EW_yellow, HIGH); 
+digitalWrite(EW_red, LOW); 
+delay(2000);
